@@ -21,7 +21,7 @@ function App() {
     {name: 'user3', surn: 'surn3', age: 32},
   ];
 
-  const result2 = users.map((item, idx) => {
+  const result22 = users.map((item, idx) => {
     return <li key={idx}>{item.name} - {item.surn} - {item.age}</li>
   })
 
@@ -31,23 +31,21 @@ function App() {
     {id: 3, name: 'product3', cost: 300},
   ];
 
-  const result3 = prods2.map(prod => {
+  const result33 = prods2.map(prod => {
     return <li key={prod.id}>{prod.name} - {prod.cost}</li>
   })
-
-
-
-
 
   return (
     <div className="App">
       <ul>{result}</ul>
       <br />
-      <hr />
-      <ul>{result2}</ul>
       <br />
       <hr />
-      <ul>{result3}</ul>
+      <ul>{result22}</ul>
+      <br />
+      <br />
+      <hr />
+      <ul>{result33}</ul>
 
     </div>
   );
